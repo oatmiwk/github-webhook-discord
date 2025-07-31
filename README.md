@@ -1,4 +1,4 @@
-# GitHub Push to Discord
+# ![Github](https://img.icons8.com/?size=35&id=AZOZNnY73haj&format=png&color=000000) GitHub Push to Discord ![Discord](https://img.icons8.com/?size=35&id=6x2kochRVv1E&format=png&color=000000)
 
 This bot allows you to have added customization to your github pushes to update your community or friends on what is happening behind the scenes
 
