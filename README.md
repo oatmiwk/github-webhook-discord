@@ -26,11 +26,10 @@ DISCORD_TOKEN=*discord_token*
 PORT=3000
 
 # --- GitHub Config (Optional) ---
-GITHUB_SECRET=*github_webhook_secret* # (if not set, will default to `null`)
+# GITHUB_SECRET=*github_webhook_secret*
 
 # --- Custom Pathing (Optional) ---
-GITHUB_CUSTOM_PATH=*custom_path*    # (if not set, will default to `/github`)
-EXTRA_STRING=*extra_string*         # (if not set, no extra string will be added)
+GITHUB_CUSTOM_PATH=*custom_path*    # (if left blank, will default to `/github`)
 ```
 
 > [!TIP]
@@ -89,9 +88,8 @@ If you aren't sure how to set up a webhook, you can follow these steps:
 
 - Go to your repo's settings `https://github.com/username/repo/settings`
 - Under **`Webhooks`** click `Add webhook`
-- **`Payload URL`** will be the IP Address or domain of your server (e.g. `http://192.168.0.0:3000/github`)
-  - If you are using Cloudflared, make sure to use the HTTPS URL (e.g. `https://domain.com/github`)
-  - For extra security, you can append the **EXTRA_STRING** set in the `.env` file to add at the end (e.g. `http://192.168.0.0:3000/github/thisisasecret`).
+- **`Payload URL`** will be the IP Address or domain of your server (e.g. `http://192.168.0.0:3000/{string}/github`)
+  - If you are using Cloudflared, make sure to use the HTTPS URL (e.g. `https://domain.com/{string}/github`)
 - **`Content type`** will be `application/json`
 - **`Secret`** _OPTIONAL (but recommended)_ - the secret you set in your `.env` file.
 - **`SSL verification`** _OPTIONAL (but recommended)_ - use SSL verification.
