@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Discord.JS-v14.21.0-5865F2?style=for-the-badge" />
   <img src="https://img.shields.io/badge/ExpressJS-v5.1.0-000000?style=for-the-badge" />
   <img src="https://img.shields.io/github/license/oatmiwk/github-webhook-discord?style=for-the-badge" />
-  <img src="https://img.shields.io/github/actions/workflow/status/oatmiwk/github-webhook-discord/ci.yml?style=for-the-badge" />
+  <img src="https://img.shields.io/github/actions/workflow/status/oatmiwk/github-webhook-discord/build.yml?style=for-the-badge" />
 </p>
 This bot allows you to have added customization to your github pushes to update your community or friends on what is happening behind the scenes!
 
