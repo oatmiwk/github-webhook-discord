@@ -4,10 +4,11 @@
   "description": "Discord bot used for sending push logs embed to a channel",
   "main": "index.js",
   "scripts": {
+    "token": "node ./generator/token-gen.js",
     "test": "node ."
   },
   "author": "oatmiwk",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^2.2.0",
     "discord.js": "^14.21.0",
