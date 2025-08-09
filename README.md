@@ -21,20 +21,14 @@ Within the same location as your `index.js`, create a new file named `.env` (exa
 ```dotenv
 # --- Discord Config (Required) ---
 DISCORD_TOKEN=*discord_token*
-DISCORD_CHANNEL_ID=*discord_channel_id*
+DISCORD_CHANNEL_ID=*discord_channel_id* # Discord Channel for all activities
 
 # --- Port Config (Required) ---
 PORT=3000
 
-# --- GitHub Config (Optional) ---
-# GITHUB_SECRET=*github_webhook_secret*
-
 # --- Custom Pathing (Optional) ---
-GITHUB_CUSTOM_PATH=*custom_path*    # (if left blank, will default to `/github`)
+# GITHUB_CUSTOM_PATH=*custom_path*    # (if left blank, will default to `github`)
 ```
-
-> [!TIP]
-> For extra security, you can append the EXTRA_STRING set in the .env file to the end of the URL
 
 ## 💻 Bot Setup
 
@@ -89,10 +83,9 @@ If you aren't sure how to set up a webhook, you can follow these steps:
 
 - Go to your repo's settings `https://github.com/username/repo/settings`
 - Under **`Webhooks`** click `Add webhook`
-- **`Payload URL`** will be the IP Address or domain of your server (e.g. `http://192.168.0.0:3000/{string}/github`)
-  - If you are using Cloudflared, make sure to use the HTTPS URL (e.g. `https://domain.com/{string}/github`)
+- **`Payload URL`** will be the IP Address or domain of your server (e.g. `http://ip-address:3000/{token}/{path}`)
+  - If you are using Cloudflared, make sure to use the HTTPS URL (e.g. `https://domain.com/{token}/{path}`)
 - **`Content type`** will be `application/json`
-- **`Secret`** _OPTIONAL (but recommended)_ - the secret you set in your `.env` file.
 - **`SSL verification`** _OPTIONAL (but recommended)_ - use SSL verification.
 - **`Which events would you like to trigger this webhook?`** - select `Just the push events`
 - **`Active`** - Allows the webhooks to be triggered.
