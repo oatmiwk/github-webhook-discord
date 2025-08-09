@@ -4,8 +4,9 @@
   "description": "Discord bot used for sending push logs embed to a channel",
   "main": "index.js",
   "scripts": {
+    "start": "node .",
     "token": "node ./generator/token-gen.js",
-    "test": "node ."
+    "test": "node -c index.js && echo 'Syntax check passed'"
   },
   "author": "oatmiwk",
   "license": "MIT",
