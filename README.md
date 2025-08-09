@@ -21,6 +21,7 @@ Within the same location as your `index.js`, create a new file named `.env` (exa
 ```dotenv
 # --- Discord Config (Required) ---
 DISCORD_TOKEN=*discord_token*
+DISCORD_CHANNEL_ID=*discord_channel_id*
 
 # --- Port Config (Required) ---
 PORT=3000
