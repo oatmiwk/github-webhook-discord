@@ -4,6 +4,7 @@
   <img src="https://img.shields.io/badge/Bot Version-v1.0.0-FC79B2?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Discord.JS-v14.21.0-5865F2?style=for-the-badge" />
   <img src="https://img.shields.io/badge/ExpressJS-v5.1.0-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/github/license/oatmiwk/github-webhook-discord?style=for-the-badge&logoSize=64" />
   <img src="https://img.shields.io/github/actions/workflow/status/oatmiwk/github-webhook-discord/build.yml?style=for-the-badge" />
 </p>
 
