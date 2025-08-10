@@ -104,7 +104,10 @@ Only one preset can be enabled at a time. The bot will cycle through the colors 
 
 ## ❓ Why did I do this?
 I had made a very bare bones bot for my Discord server, as i was annoyed that I could only display 5 commits at a time and the messages would get cut after like 10 words.
-While it is not for everyone, a very small population just might! It also set me to do something and start with a small little project that I plan to make it much much easier to use in the future. Could I have made a simple github action? Ummm... yeah... but this is more fun!!
+While it is not for everyone, a very small population just might! It also set me to do something and start with a small little project that I plan to make it much much easier to use in the future. 
+
+- Could I have made a simple github action? Ummm... yeah... but this is more fun!!
+- Is this over the top? Who knows!
 
 
 ## 📑 Future Features
