@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "token": "node ./generator/token-gen.js",
     "test": "node -c index.js && echo 'Syntax check passed'"
   },
   "author": "oatmiwk",
