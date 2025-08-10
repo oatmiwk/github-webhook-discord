@@ -9,6 +9,7 @@
 </p>
 
 ## 🤖 About this Bot
+
 This bot allows you to have added customization to your github pushes to update your community or friends on what is happening behind the scenes!
 
 GitHub Webhooks to Discord only allows up to 5 Commits to be displayed in one embed. As well, it cuts texts when it exceeds a certain amount of characters per push.
@@ -103,13 +104,22 @@ In the `config` folder, there's a `config.js` file (will be changed soon) that c
 Only one preset can be enabled at a time. The bot will cycle through the colors in the enabled preset for each new webhook message.
 
 ## ❓ Why did I do this?
+
 I had made a very bare bones bot for my Discord server, as i was annoyed that I could only display 5 commits at a time and the messages would get cut after like 10 words.
-While it is not for everyone, a very small population just might! It also set me to do something and start with a small little project that I plan to make it much much easier to use in the future. 
+While it is not for everyone, a very small population just might! It also set me to do something and start with a small little project that I plan to make it much much easier to use in the future.
 
 - Could I have made a simple github action? Ummm... yeah... but this is more fun!!
 - Is this over the top? Who knows!
 
+# 📋 TODO
 
-## 📑 Future Features
+- [ ] PR Support
+- [ ] Issue Support
+- [ ] Release Support
+- [ ] Docker Support
+- [ ] Command Support
 
-Currently the bot only handles push events, later will be adding Issues, PRs and Automations.
+## ⁉️ Potential Features
+
+- [ ] Other Platform Support
+- [ ] A Bot Available to Anyone
