@@ -1,6 +1,7 @@
 # ![Github](https://img.icons8.com/?size=35&id=AZOZNnY73haj&format=png&color=000000) GitHub Push to Discord ![Discord](https://img.icons8.com/?size=35&id=6x2kochRVv1E&format=png&color=000000)
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Bot Version-v1.0.0-FC79B2?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Discord.JS-v14.21.0-5865F2?style=for-the-badge" />
   <img src="https://img.shields.io/badge/ExpressJS-v5.1.0-000000?style=for-the-badge" />
   <img src="https://img.shields.io/github/license/oatmiwk/github-webhook-discord?style=for-the-badge" />
@@ -21,8 +22,7 @@ Within the same location as your `index.js`, create a new file named `.env` (exa
 ```dotenv
 # --- Discord Config (Required) ---
 DISCORD_TOKEN=*discord_token*
-DISCORD_CHANNEL_ID=*discord_channel_id* # Discord Channel for all activities
-
+DISCORD_CHANNEL_ID=*discord_channel_id* # Channel for the webhooks to be sent
 # --- Port Config (Required) ---
 PORT=3000
 
@@ -47,17 +47,20 @@ npm i
 node .
 ```
 
-Using `node .` is useful for development purposes, and will only run when the terminal is opened, you can install a package like [PM2](https://pm2.io/) to allow you to run it in the background.
+> [!NOTE]
+> When doing `node .`, you will see a log with thefull link of the webhook (excluding the IP address)
 
-It is recommended you install it globaly!
+# ⚙️ Using PM2
 
-**⚙️ Installing PM2**
+Using `node .` will only run until as long as your terminal is open, you can install a package like [PM2](https://pm2.io/) to allow you to run it in the background.
+
+**📦 Install it Globally**
 
 ```sh
 npm install pm2 -g
 ```
 
-While still being inside the same folder as `index.js` you can do the following command to start.
+While still being inside the same folder as the `index.js` you can do the following command to start.
 **🔑 Starting the bot**
 
 ```sh
@@ -66,7 +69,7 @@ pm2 start index.js --name push-bot
 
 You can change the name to whatever you would like!
 
-You can refer to the documentation of [PM2 Quick Start](https://pm2.keymetrics.io/docs/usage/quick-start/) for further instructions on how to use it!
+##### You can refer to the documentation of [PM2 Quick Start](https://pm2.keymetrics.io/docs/usage/quick-start/) for further instructions on how to use it!
 
 ## 🖥️ How to Host
 
@@ -83,12 +86,21 @@ If you aren't sure how to set up a webhook, you can follow these steps:
 
 - Go to your repo's settings `https://github.com/username/repo/settings`
 - Under **`Webhooks`** click `Add webhook`
-- **`Payload URL`** will be the IP Address or domain of your server (e.g. `http://ip-address:3000/{token}/{path}`)
-  - If you are using Cloudflared, make sure to use the HTTPS URL (e.g. `https://domain.com/{token}/{path}`)
+- **`Payload URL`** will be the link that was shown in the console earlier, remember to change the `ip-address` to your server's IP address
+  - If you are using Cloudflared, make sure to use the HTTPS URL (e.g. `https://domain.com/{path}/{token}`)
 - **`Content type`** will be `application/json`
 - **`SSL verification`** _OPTIONAL (but recommended)_ - use SSL verification.
 - **`Which events would you like to trigger this webhook?`** - select `Just the push events`
 - **`Active`** - Allows the webhooks to be triggered.
+
+## 🎨 Color Configs
+
+In the `config` folder, there's a `config.js` file (will be changed soon) that contains 3 color presets which can be modified:
+
+- `isEnabled` - determines which color sequence is currently active
+- `colors` - defines the sequence/order of colors. Uses hex notation (eg. `0xFFFFFF`)
+
+Only one preset can be enabled at a time. The bot will cycle through the colors in the enabled preset for each new webhook message.
 
 ## 📑 Future Features
 
