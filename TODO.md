@@ -4,7 +4,6 @@
 - [ ] Issue Support
 - [ ] Release Support
 - [ ] Docker Support
-- [ ] More Themes
 - [ ] Command Support
 
 # ⁉️ Potential Features
