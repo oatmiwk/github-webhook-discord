@@ -49,13 +49,13 @@ node .
 ```
 
 > [!NOTE]
-> When doing `node .`, you will see a log with thefull link of the webhook (excluding the IP address)
+> When doing `node .`, you will see a log with the full link of the webhook (excluding the IP address)
 
 ## ⚙️ Using PM2
 
 Using `node .` will only run until as long as your terminal is open, you can install a package like [PM2](https://pm2.io/) to allow you to run it in the background.
 
-**📦 Install it Globally**
+**📦 Install PM2 Globally**
 
 ```sh
 npm install pm2 -g
