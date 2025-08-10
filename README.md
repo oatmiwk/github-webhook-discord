@@ -7,11 +7,11 @@
   <img src="https://img.shields.io/github/license/oatmiwk/github-webhook-discord?style=for-the-badge" />
   <img src="https://img.shields.io/github/actions/workflow/status/oatmiwk/github-webhook-discord/build.yml?style=for-the-badge" />
 </p>
+
+## 🤖 About this Bot
 This bot allows you to have added customization to your github pushes to update your community or friends on what is happening behind the scenes!
 
 GitHub Webhooks to Discord only allows up to 5 Commits to be displayed in one embed. As well, it cuts texts when it exceeds a certain amount of characters per push.
-
-Using this bot allows you to customise the logs however you want them too look! (With Discord's limitations)
 
 ## 🔐 dotenv File config
 
@@ -50,7 +50,7 @@ node .
 > [!NOTE]
 > When doing `node .`, you will see a log with thefull link of the webhook (excluding the IP address)
 
-# ⚙️ Using PM2
+## ⚙️ Using PM2
 
 Using `node .` will only run until as long as your terminal is open, you can install a package like [PM2](https://pm2.io/) to allow you to run it in the background.
 
@@ -101,6 +101,11 @@ In the `config` folder, there's a `config.js` file (will be changed soon) that c
 - `colors` - defines the sequence/order of colors. Uses hex notation (eg. `0xFFFFFF`)
 
 Only one preset can be enabled at a time. The bot will cycle through the colors in the enabled preset for each new webhook message.
+
+## ❓ Why did I do this?
+I had made a very bare bones bot for my Discord server, as i was annoyed that I could only display 5 commits at a time and the messages would get cut after like 10 words.
+While it is not for everyone, a very small population just might! It also set me to do something and start with a small little project that I plan to make it much much easier to use in the future. Could I have made a simple github action? Ummm... yeah... but this is more fun!!
+
 
 ## 📑 Future Features
 
